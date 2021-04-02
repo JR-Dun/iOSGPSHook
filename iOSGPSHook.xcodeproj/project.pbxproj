@@ -14,6 +14,7 @@
 		C372D7E0203122EA00B35D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C372D7DF203122EA00B35D2F /* Assets.xcassets */; };
 		C372D7E3203122EA00B35D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C372D7E1203122EA00B35D2F /* LaunchScreen.storyboard */; };
 		C372D7EC2031314100B35D2F /* Work.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C372D7EB2031314100B35D2F /* Work.gpx */; };
+		C3CC738B2616F579003AB817 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CC738A2616F579003AB817 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		C372D7E2203122EA00B35D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C372D7E4203122EA00B35D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C372D7EB2031314100B35D2F /* Work.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Work.gpx; sourceTree = "<group>"; };
+		C3CC738A2616F579003AB817 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C3CC738D2616F77A003AB817 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		C3CC738E2616F7D1003AB817 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CC738B2616F579003AB817 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 			children = (
 				C372D7D2203122EA00B35D2F /* iOSGPSHook */,
 				C372D7D1203122EA00B35D2F /* Products */,
+				C3CC73892616F578003AB817 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +66,7 @@
 		C372D7D2203122EA00B35D2F /* iOSGPSHook */ = {
 			isa = PBXGroup;
 			children = (
+				C3CC738E2616F7D1003AB817 /* Prefix.pch */,
 				C372D7EB2031314100B35D2F /* Work.gpx */,
 				C372D7D6203122EA00B35D2F /* AppDelegate.h */,
 				C372D7D7203122EA00B35D2F /* AppDelegate.m */,
@@ -70,6 +77,7 @@
 				C372D7E1203122EA00B35D2F /* LaunchScreen.storyboard */,
 				C372D7E4203122EA00B35D2F /* Info.plist */,
 				C372D7D3203122EA00B35D2F /* Supporting Files */,
+				C3CC738D2616F77A003AB817 /* Defines.h */,
 			);
 			path = iOSGPSHook;
 			sourceTree = "<group>";
@@ -80,6 +88,14 @@
 				C372D7D4203122EA00B35D2F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3CC73892616F578003AB817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3CC738A2616F579003AB817 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +139,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -280,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7LE64BXM5T;
+				GCC_PREFIX_HEADER = iOSGPSHook/Prefix.pch;
 				INFOPLIST_FILE = iOSGPSHook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -293,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7LE64BXM5T;
+				GCC_PREFIX_HEADER = iOSGPSHook/Prefix.pch;
 				INFOPLIST_FILE = iOSGPSHook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -320,6 +339,7 @@
 				C372D7E9203122EA00B35D2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

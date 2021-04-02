@@ -6,7 +6,10 @@
      waypoint, Xcode will simulate that specific location. If you provide multiple waypoints,
      Xcode will simulate a route visiting each waypoint.
      -->
-    <wpt lat="23.090852" lon="113.272316"> <!-- 奇思能达 -->
+    <!-- http://api.map.baidu.com/lbsapi/getpoint/index.html?qq-pf-to=pcqq.c2c -->
+    <!-- 上面地址拿到的经纬度需要再计算 lat-0.003553  lon-0.01235 -->
+    <wpt lat="23.08789" lon="113.240893"> <!-- 新年鸿大厦 -->
+    <!--<wpt lat="23.133497" lon="113.264782">--> <!-- 颐德 -->
     <!--<wpt lat="23.130747" lon="113.401879">--> <!-- 车陂 -->
         <name>Work</name>
         <cmt>奇思能达孵化基地</cmt>
